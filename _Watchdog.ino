@@ -9,6 +9,6 @@ void ISRWatchdog(){
   if (wd_count == 30){
     Serial.println();
     Serial.println("Watchdog bite, resetting....");
-    ESP.reset();
+    ESP.restart();
   };
 };
