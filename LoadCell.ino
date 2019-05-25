@@ -4,6 +4,12 @@
 
 #include "General_Resources.hpp"
 
+#include <Ticker.h>
+
+Ticker sTick;
+
+volatile int wd_count = 0;
+
 void setup() {
     Serial.begin(57600);
   
